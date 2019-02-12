@@ -44,3 +44,4 @@ source_group(Sources FILES ${_sources})
 
 add_library(glutess STATIC ${_headers} ${_sources})
 set_target_properties(glutess PROPERTIES DEBUG_POSTFIX "d")
+set_target_properties(glutess PROPERTIES POSITION_INDEPENDENT_CODE ON)
